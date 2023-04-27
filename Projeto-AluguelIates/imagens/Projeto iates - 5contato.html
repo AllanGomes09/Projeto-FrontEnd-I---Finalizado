@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXO - Aluguel de Iates</title>
+
+    <style>
+    @media only screen and (max-width: 700px) {
+    #telaCheia{
+        visibility: hidden;
+    }
+    ul{
+    position: absolute ;
+    left: 65px;
+    top: 15px;
+    width: 50px;
+}
+
+    li{
+    width: 122px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+    #blocoSobreImagem{
+        left: 120px;
+    }
+    .divgeral {
+    display:block;
+    width: 500px;
+    left: 50px;
+
+    }
+
+    nav {
+    width: 700px;
+}
+#imgBarco {
+    
+    width: 700px;
+}
+
+.box{
+        
+        left: 350px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 700px) {
+    
+    #telaReduzida{
+        visibility: hidden;
+    }
+
+    ul {
+        position: relative ;
+        left: 15px;
+        width: 68%;
+        margin: 5px 0px 1px 0px;
+    }
+    
+    li {
+        width: 122px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    #blocoSobreImagem{
+        left: 560px;
+    }
+
+    .divgeral {
+    display: flex;
+    width: 965px;
+    }
+
+    nav {
+    width: 980px;
+    }
+
+    #imgBarco {
+        
+        width: 980px;
+    }
+
+    .box{
+        
+        left: 560px;
+    }
+}
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.parent {
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+}
+
+.makeInline {
+    display: inline-block;
+}
+
+body {
+    margin: 0px 45px;
+    background-color: #EBEBEB;
+    width: 980px;
+}
+
+#imgBarco {
+    background-image: url(barcoprincipal.jpg);
+    background-size:cover;
+    height: 495px;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: auto;
+    display: inline-block;
+}
+
+#blocoSobreImagem {
+    height: 227px;
+    width: 426px;
+    position: absolute;
+    top: 300px;
+    
+    background: #1A3243;
+    opacity: 0.90;
+    color: aliceblue;
+    text-align: left;
+    }
+
+nav {
+    height: 100px;
+    background-color: #21272B;
+}
+
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.cabeçalho1{ 
+    background-color:#1BB4E8;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+    height: 35px;
+}
+.cabeçalho2{ 
+    background-color: #C6B07F;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+    height: 35px;
+}
+
+.cabeçalho-titulo{
+font-size: 20px;
+font-weight:100;
+color: white;
+}
+.título{
+font-size: 22px;
+font-weight:100 ;
+
+}
+.texto{
+font-size: 17px;
+font-weight:100;
+font-style: initial;
+
+}
+.imagem{
+display: flex;
+flex-direction: row;
+gap: 10px;
+height:0px;
+width: 445px;
+}
+
+.imagem-1{
+margin-right:10px;
+padding:0px 0px 0px 0px;
+}
+#imgUm{
+margin-right:  20px;
+
+
+}
+#imgDois{
+margin-top: 20px;
+margin-right: 20px;
+
+}
+.imagem-2{
+padding: 0px 10px 0px 0px;
+
+
+}
+.divgeral {
+    
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 8px;
+    gap: 30px;
+    
+    padding-top: 10px;
+    block-size: 75px;
+    
+  }
+
+
+
+       
+    .box{
+        color: white;
+        position: absolute;
+        top: 1000px;
+        transform: translate(-50%,-50%);
+        background-color: rgb(26, 50, 67, 0.9);
+        padding: 15px;
+        border-radius: 20px;
+        width: 250px;
+    }
+    fieldset{
+        border: 3px solid dodgerblue;
+    }
+    legend{
+        border: 1px solid dodgerblue;
+        padding: 10px;
+        text-align: center;
+        background-color: dodgerblue;
+        border-radius: 6px;
+        
+    }
+    .inputBox{
+        position: relative;
+    }
+    .inputUser{
+        background:none ;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    .labelinput{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: 5s;
+    }
+    .inputUser:focus ~ .labelinput,
+    .inputUser:valid ~ .labelinput{
+        top: -20px;
+        font-size: 15px;
+        color: dodgerblue;
+    }
+    #date_nascimento{
+        border: none;
+        padding: 9px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 15px;
+    }
+    #submit{
+        background-image: linear-gradient(to right, rgb(46, 106, 161), rgb(38, 165, 144));
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 19px;
+    }
+    #submit:hover{
+        background-image: linear-gradient(to right,  rgb(0, 80, 172), rgb(80, 19, 181)) ;
+    }
+
+   
+
+
+    </style>
+    
+    </head>
+    
+    
+    
+    
+    <body>
+    
+        <nav class="parent">
+
+            <span style=" margin: 20px 60px 10px 0px; display: inline-block; font-size: 25px;">
+            <img class="child" src="barco1.png" alt="logo">
+            <i>
+            <div class="child" style="text-align: left;">
+            <span style="color: #1BB4E8;">Luxo</span>
+            </br>
+            <span style="color: #FFFFFF;">Aluguel de Iates</span>
+            </i>
+            </div> 
+            </span>
+            
+    
+    
+        <ul id= "telaCheia" class="child" style="color: #FFFFFF; font-size: 20px;"> 
+    
+            <li><a style="color: #FFFFFF; " target="_self" href="Projeto iates.html">PÁGINA INICIAL</a></li>
+            |  
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 2Aluguel.html">ALUGUEL DE IATES</a></li>
+            |
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 3destinos.html">DESTINOS</a></li>
+            |
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 4tripulacao.html">TRIPULAÇÃO</a></li>
+            |
+            <li><a style="color: #1BB4E8" target="_self" href="Projeto iates - 5contato.html">CONTATO</a></li>
+            
+        </ul>
+    
+        <ul id= "telaReduzida" class="child" style="color: #FFFFFF; font-size: 20px;"> 
+    
+            <li><a style="color: #FFFFFF; " target="_self" href="Projeto iates.html">PÁGINA INICIAL</a></li>
+              
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 2Aluguel.html">ALUGUEL DE IATES</a></li>
+            
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 3destinos.html">DESTINOS</a></li>
+            
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 4tripulacao.html">TRIPULAÇÃO</a></li>
+            
+            <li><a style="color: #1BB4E8" target="_self" href="Projeto iates - 5contato.html">CONTATO</a></li>
+            
+        </ul>
+    
+    </nav>
+    
+    <div id="imgBarco" >
+    
+            <i>
+            <div class="parent" id="blocoSobreImagem">
+    
+            <div style="font-size: 30px; padding: 25px 10px 30px 20px; text-align: left;">Você só encontra coisas boas,<br> se combinar luxo e paixão.</div>
+            <div style="font-size: 20px; text-align: left; padding: 0px 10px 20px 20px;" class="parent">
+            <img class="child" src="barco2.png"><div class="child" style="padding-left: 8px;">Ligue agora para agendar as férias de <br> sua vida: <span style="color: #C6B07F; font-size: 25px;">(00) 8000-0000</span></div>
+        
+            </div>
+    
+            </div>
+            </i>
+    </div>
+
+    <div class="backgroundForm">
+    <div class="box">
+        <from action="">
+            <fieldset>
+                <legend><b>Formulário dos Cliente</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelinput"> Seu nome completo:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="email" class="inputUser" required>
+                    <label for="email" class="labelinput"> Seu email:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="tel" id="tel" class="inputUser" required>
+                    <label for="tel" class="labelinput"> Digite seu número:</label>
+                </div>
+                <br>
+                <p>Sexo</p>
+                <input type="radio" id="Feminino" name="Gênero" value="Feminino" required>
+                <label for="Feminino">Feminino</label>
+                <br>
+                <input type="radio" id="Masculino" name="Gênero" value="Masculino" required>
+                <label for="Masculino">Masculino</label>
+                <br>
+                <input type="radio" id="Outro" name="Gênero" value="Outro" required>
+                <label for="Outro">Outro</label>
+                <br>
+                <label for="date_nascimento"><b>Data de nascimento:</b> </label>
+                <input type="date" name="date_nascimento" id="date_nascimento" class="date_nascimento" required>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelinput">Cidade:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelinput">Estado:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelinput">Endereço:</label>
+                <br><br>    
+                </div>
+                <input type="submit" name="submit" id="submit">
+                
+
+
+            </fieldset>
+        </from>
+    </div>
+</div>
+</body>
+</html>

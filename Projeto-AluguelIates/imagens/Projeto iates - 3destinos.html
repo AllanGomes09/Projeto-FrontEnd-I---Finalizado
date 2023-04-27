@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXO - Aluguel de Iates</title>
+
+    <style>
+
+        @media only screen and (max-width: 700px) {
+            #telaCheia{
+                visibility: hidden;
+            }
+            ul{
+            position: absolute ;
+            left: 65px;
+            top: 15px;
+            width: 50px;
+        }
+        
+            li{
+            width: 122px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+            #blocoSobreImagem{
+                left: 120px;
+            }
+            .divgeral {
+            display:block;
+            width: 500px;
+            left: 50px;
+    
+            }
+    
+            nav {
+            width: 700px;
+        }
+        #imgBarco {
+            
+            width: 700px;
+        }
+    
+    
+    
+        }
+    
+        @media only screen and (min-width: 700px) {
+            
+            #telaReduzida{
+                visibility: hidden;
+            }
+    
+            ul {
+                position: relative ;
+                left: 15px;
+                width: 68%;
+                margin: 5px 0px 1px 0px;
+            }
+            
+            li {
+                width: 122px;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+            }
+    
+            #blocoSobreImagem{
+                left: 560px;
+            }
+    
+            .divgeral {
+            display: flex;
+            width: 965px;
+            }
+    
+            nav {
+            width: 980px;
+        }
+    
+        #imgBarco {
+            
+            width: 980px;
+        }
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .parent {
+            text-align: center;
+        }
+    
+        .child {
+            display: inline-block;
+        }
+    
+        .makeInline {
+            display: inline-block;
+        }
+    
+        body {
+            margin: 0px 45px;
+            background-color: #EBEBEB;
+            width: 980px;
+        }
+    
+        #imgBarco {
+            background-image: url(barcoprincipal.jpg);
+            background-size:cover;
+            height: 495px;
+            background-repeat: no-repeat;
+            background-position: top;
+            margin: auto;
+            display: inline-block;
+        }
+    
+        #blocoSobreImagem {
+            height: 227px;
+            width: 426px;
+            position: absolute;
+            top: 300px;
+            
+            background: #1A3243;
+            opacity: 0.90;
+            color: aliceblue;
+            text-align: left;
+            }
+        
+        nav {
+            height: 100px;
+            background-color: #21272B;
+        }
+    
+       
+    
+        
+    
+        
+    
+    
+    
+    
+        a {
+            text-decoration: none;
+        }
+    
+    
+    
+        .cabeçalho1{ 
+            background-color:#1BB4E8;
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            gap: 5px;
+            margin-top: 4px;
+            height: 35px;
+        }
+        .cabeçalho2{ 
+            background-color: #C6B07F;
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            gap: 5px;
+            margin-top: 4px;
+            height: 35px;
+        }
+    
+    .cabeçalho-titulo{
+        font-size: 20px;
+        font-weight:100;
+        color: white;
+    }
+    .título{
+        font-size: 22px;
+        font-weight:100 ;
+    
+    }
+    .texto{
+        font-size: 17px;
+        font-weight:100;
+        font-style: initial;
+    
+    }
+    .imagem{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        height:0px;
+        width: 445px;
+    }
+    
+    .imagem-1{
+        margin-right:10px;
+        padding:0px 0px 0px 0px;
+    }
+    #imgUm{
+        margin-right:  20px;
+       
+    
+    }
+    #imgDois{
+        margin-top: 20px;
+        margin-right: 20px;
+    
+    }
+    .imagem-2{
+        padding: 0px 10px 0px 0px;
+    
+    
+    }
+    .divgeral {
+            
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 8px;
+            gap: 30px;
+            
+            padding-top: 10px;
+            block-size: 75px;
+            
+          }
+    </style>
+    
+    </head>
+    
+    
+    
+    
+    <body>
+    
+        <nav class="parent">
+
+            <span style=" margin: 20px 60px 10px 0px; display: inline-block; font-size: 25px;">
+            <img class="child" src="barco1.png" alt="logo">
+            <i>
+            <div class="child" style="text-align: left;">
+            <span style="color: #1BB4E8;">Luxo</span>
+            </br>
+            <span style="color: #FFFFFF;">Aluguel de Iates</span>
+            </i>
+            </div> 
+            </span>
+            
+    
+    
+        <ul id= "telaCheia" class="child" style="color: #FFFFFF; font-size: 20px;"> 
+    
+            <li><a style="color: #FFFFFF; " target="_self" href="Projeto iates.html">PÁGINA INICIAL</a></li>
+            |  
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 2Aluguel.html">ALUGUEL DE IATES</a></li>
+            |
+            <li><a style="color: #1BB4E8" target="_self" href="Projeto iates - 3destinos.html">DESTINOS</a></li>
+            |
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 4tripulacao.html">TRIPULAÇÃO</a></li>
+            |
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 5contato.html">CONTATO</a></li>
+            
+        </ul>
+    
+        <ul id= "telaReduzida" class="child" style="color: #FFFFFF; font-size: 20px;"> 
+    
+            <li><a style="color: #FFFFFF; " target="_self" href="Projeto iates.html">PÁGINA INICIAL</a></li>
+              
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 2Aluguel.html">ALUGUEL DE IATES</a></li>
+            
+            <li><a style="color: #1BB4E8" target="_self" href="Projeto iates - 3destinos.html">DESTINOS</a></li>
+            
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 4tripulacao.html">TRIPULAÇÃO</a></li>
+            
+            <li><a style="color: #FFFFFF" target="_self" href="Projeto iates - 5contato.html">CONTATO</a></li>
+            
+        </ul>
+    
+    </nav>
+    
+    <div id="imgBarco" >
+    
+            <i>
+            <div class="parent" id="blocoSobreImagem">
+    
+            <div style="font-size: 30px; padding: 25px 10px 30px 20px; text-align: left;">Você só encontra coisas boas,<br> se combinar luxo e paixão.</div>
+            <div style="font-size: 20px; text-align: left; padding: 0px 10px 20px 20px;" class="parent">
+            <img class="child" src="barco2.png"><div class="child" style="padding-left: 8px;">Ligue agora para agendar as férias de <br> sua vida: <span style="color: #C6B07F; font-size: 25px;">(00) 8000-0000</span></div>
+        
+            </div>
+    
+            </div>
+            </i>
+    </div>
+
+<br><br><br><br><br>
+PLACEHOLDER ; DESTINOS
+    
+
+
+</body>
+</html>
